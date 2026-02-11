@@ -47,12 +47,6 @@ class Solution:
  
         return not stk
 
- 
-    
-    def findInStack(stack: List[str]) -> int:
-        pass
-        
-
 sol = Solution()
 print(sol.validParenthesis("()"))
 print(sol.validParenthesis("()[]{}"))
