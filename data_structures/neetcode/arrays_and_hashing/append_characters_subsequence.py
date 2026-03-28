@@ -28,25 +28,25 @@ It can be shown that appending any 4 characters to the end of s will never make 
 class Solution:
     def appendCharacters(self, s: str, t: str) -> int:
         i = 0
-        counter = 0
+        """  counter = 0 """
         for j in range(len(s)):
             if i < len(t) and s[j] == t[i]:
                 i += 1
         
-        list_s = []
+        """ list_s = []
         list_t = []
         for c in s:
             list_s.append(c)
         
         for c in t:
-            list_t.append(c)
+            list_t.append(c) """
         
 
-        for j in range(i, len(t)):
+        """ for j in range(i, len(t)):
             list_s.append(list_t[j])
-            counter += 1
+            counter += 1 """
         
-        return counter
+        return len(t) - i
 
 sol = Solution()
 print(sol.appendCharacters("coaching", "coding"))
