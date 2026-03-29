@@ -23,7 +23,7 @@ Explanation: The last word is "joyboy" with length 6.
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
         my_list = s.split()
-        if not my_list or not s:
+        if not my_list:
             return 0
         
         last_word = my_list[-1]
@@ -39,3 +39,19 @@ print(sol.lengthOfLastWord("    "))
 
 #T: O(n)
 #S: O(n)
+
+"""
+s = "   fly me   to   the moon  "
+         ↓
+    s.split()
+         ↓
+["fly", "me", "to", "the", "moon"]
+         ↓
+    my_list[-1]
+         ↓
+       "moon"
+         ↓
+     len("moon")
+         ↓
+         4 ✅
+"""
