@@ -48,13 +48,9 @@ class Solution:
         for i in range(len(words)):
             for j in range(len(words)):
                 
-                if i >= len(words[j]) and j >= len(words[i]):
-                    continue
-                
-                if i >= len(words[j]) or j >= len(words[i]):
-                    return False
-                
-                if words[i][j] != words[j][i]:
+                if j >= len(words) or \
+                    i >= len(words[j]) or \
+                    words[i][j] != words[j][i]:
                     return False
         
         return True
@@ -75,5 +71,3 @@ print(sol.validWordSquare(["ball",
                             "read",
                             "lady"]))
 
-#T: O(n^2)
-#S: O(1)
