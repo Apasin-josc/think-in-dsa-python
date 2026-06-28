@@ -37,4 +37,5 @@ class Solution:
     
 
 sol = Solution()
-print(sol.topKFrequent([1,2,2,2,2,2,3,3,3,3,3,3,3,3,3], 2))
+#print(sol.topKFrequent([1,2,2,2,2,2,3,3,3,3,3,3,3,3,3], 2))
+print(sol.topKFrequentOld([1,2,2,2,2,2,3,3,3,3,3,3,3,3,3], 2))
